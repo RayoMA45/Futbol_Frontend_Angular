@@ -1,0 +1,26 @@
+.home-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #000000;
+  color: #dcdcdc;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.card:hover {
+  background: #dcdcdc;
+}
