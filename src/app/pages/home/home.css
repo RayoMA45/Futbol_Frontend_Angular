@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 25px;
-  background: #ffffff;
+  padding: 0px 15px;
+  background: #09356E;
 }
 
 .logo {
@@ -18,75 +18,48 @@
 }
 
 .card {
-  padding: 10px 20px;
-  background: #09356E;
-  color: #ffffff;
+  padding: 10px 25px;
+  background: #ffffff;
+  color: #000000;
   border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
   white-space: nowrap;
-  transition: .2s ease;
+  transition: .2s;
+  font-size: medium;
 }
 
 .card:hover {
-  background: #0f4a98;
+  background: #000000;
+  color: #ffffff;
 }
 
 .login-img {
   height: 40px;
-  background: #09356E;
+  background: #000000;
   padding: 5px;
   border-radius: 10px;
 }
 
 .middle-section {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-  padding: 0 40px;
+  justify-content: center;
+ 
 }
 
-.ball-left,
-.ball-right {
-  width: 320px;
-  opacity: .9;
-}
 
 .center-content {
-  text-align: center;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
 }
 
-.texto_titulo {
-  font-size: 120px;
-  color: #09356E;
-}
-
-.player-img {
-  width: 350px;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .texto_titulo {
-    font-size: 70px;
-  }
-  .ball-left,
-  .ball-right {
-    width: 200px;
-  }
-  .player-img {
-    width: 250px;
-  }
-}
-
-@media (max-width: 600px) {
-  .middle-section {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .ball-left,
-  .ball-right {
-    width: 160px;
-  }
+.full-img {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
 }
