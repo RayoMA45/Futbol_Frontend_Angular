@@ -39,6 +39,7 @@
   background: #000000;
   padding: 5px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .middle-section {
@@ -47,7 +48,6 @@
   justify-content: center;
  
 }
-
 
 .center-content {
   width: 100%;
