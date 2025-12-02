@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Menu } from '../../shared/menu/menu';
 
 @Component({
-  selector: 'app-equipos',
+  selector: 'app-estadios',
   imports: [Menu],
-  templateUrl: './equipos.html',
-  styleUrl: './equipos.css',
+  templateUrl: './estadios.html',
+  styleUrl: './estadios.css',
 })
-export class Equipos {
+export class Estadios {
 
 }
