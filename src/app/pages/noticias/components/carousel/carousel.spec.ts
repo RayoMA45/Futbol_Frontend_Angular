@@ -1,23 +1,23 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
-import { Carousel } from './carousel';
+@Component({
+  selector: 'app-carousel',
+  templateUrl: './carousel.html',
+  styleUrls: ['./carousel.css']
+})
+export class CarouselComponent {
 
-describe('Carousel', () => {
-  let component: Carousel;
-  let fixture: ComponentFixture<Carousel>;
+  @ViewChild('carousel', { static: false })
+  carousel!: ElementRef<HTMLDivElement>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [Carousel]
-    })
-    .compileComponents();
+  // ancho del elemento + márgenes (ajústalo si cambias tu CSS)
+  private cardWidth = 450; 
 
-    fixture = TestBed.createComponent(Carousel);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
-  });
+  scrollRight() {
+    this.carousel.nativeElement.scrollLeft += this.cardWidth;
+  }
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  scrollLeft() {
+    this.carousel.nativeElement.scrollLeft -= this.cardWidth;
+  }
+}
