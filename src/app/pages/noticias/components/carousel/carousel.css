@@ -9,14 +9,14 @@
 .content{
   display: flex;
   flex-direction: row;
-  align-items: center;  /* opcional: centra verticalmente */
+  align-items: center;
   gap: 1rem;  
 }
 
 .carousel {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: hidden; /* 🔥 oculta los otros elementos */
+  overflow-x: hidden;
   width: 80%;        
   scroll-behavior: smooth;
 
@@ -43,14 +43,9 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
-  
-  /* 🔥 Botón negro sólido */
   background: #000;
   color: #fff;
-
-  /* 🔥 Borde visible (lo verás cuando el hover sea blanco) */
   border: 2px solid #000;
-
   padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 50%;
@@ -59,11 +54,8 @@
 }
 
 .btn:hover {
-  /* 🔥 Botón blanco total */
   background: #fff;
   color: #000;
-  
-  /* 🔥 Mantener el borde para que se vea */
   border-color: #000;
 }
 
